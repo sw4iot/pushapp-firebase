@@ -1,0 +1,2 @@
+FIREBASE_HOST="https://test-70345.firebaseio.com"
+FIREBASE_AUTH="AIzaSyBFKUP_hXt84X1KoAjQ9Ulhm97_lFDtl48"

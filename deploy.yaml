@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    io.contiv.tenant: sce2e8b
+    io.contiv.network: sce2e8b-net
+    io.contiv.net-group: sce2e8b-group
+    k8s-app: ce2e8b-pushapp-firebase
+  name: ce2e8b-pushapp-firebase
+spec:
+  containers:
+    - name: pushapp
+      image: sw4iot/pushapp-firebase
+      imagePullPolicy: Always
+  dnsPolicy: "None"
+  dnsConfig:
+    nameservers:
+      - 8.8.8.8
+    searches:
+      - custom.dns.local
